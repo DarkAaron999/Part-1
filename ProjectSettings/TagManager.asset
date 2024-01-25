@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Missile
+  - Car
+  - Oillspill
+  - Boost
   layers:
   - Default
   - TransparentFX
@@ -14,9 +17,9 @@ TagManager:
   - UI
   - Lever
   - Launcher
-  - Cone
   - Finish Line
-  - 
+  - Cone
+  - Wall
   - 
   - 
   - 
