@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 308511510}
   - component: {fileID: 308511509}
   - component: {fileID: 308511508}
+  - component: {fileID: 308511511}
   m_Layer: 13
   m_Name: Lazer (1)
   m_TagString: Untagged
@@ -507,6 +508,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &308511511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308511506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f5ecb81da384a49be89f504df1811f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 466958562}
 --- !u!1 &466958562
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +602,7 @@ Transform:
   m_GameObject: {fileID: 466958562}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.501, y: -0.03, z: 0}
+  m_LocalPosition: {x: 4.51, y: -0.03, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -730,6 +744,7 @@ GameObject:
   - component: {fileID: 490670202}
   - component: {fileID: 490670205}
   - component: {fileID: 490670204}
+  - component: {fileID: 490670206}
   m_Layer: 13
   m_Name: Lazer
   m_TagString: Untagged
@@ -876,6 +891,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &490670206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490670201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f5ecb81da384a49be89f504df1811f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 466958562}
 --- !u!1 &601547271
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +916,7 @@ GameObject:
   - component: {fileID: 601547275}
   - component: {fileID: 601547274}
   - component: {fileID: 601547273}
+  - component: {fileID: 601547276}
   m_Layer: 13
   m_Name: Lazer (2)
   m_TagString: Untagged
@@ -1034,6 +1063,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &601547276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601547271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f5ecb81da384a49be89f504df1811f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 466958562}
 --- !u!1 &631676547
 GameObject:
   m_ObjectHideFlags: 0
