@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 466958563}
   - component: {fileID: 466958565}
   - component: {fileID: 466958566}
+  - component: {fileID: 466958567}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -435,8 +436,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1
-  m_AngularDrag: 0.05
+  m_LinearDrag: 5
+  m_AngularDrag: 5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -449,6 +450,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &466958567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466958562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 021b46bd71a2ffd4fbe7e2ecfba669ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 466958566}
+  force: 325
 --- !u!1 &490670201
 GameObject:
   m_ObjectHideFlags: 0
@@ -5282,8 +5297,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &2141952076
-PolygonCollider2D:
+--- !u!68 &2141952076
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5315,22 +5330,17 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_EdgeRadius: 0
   m_Points:
-    m_Paths:
-    - - {x: -6.0042243, y: 8.998797}
-      - {x: -5.998594, y: -4.996693}
-      - {x: 13.998589, y: -5.002013}
-      - {x: 13.999128, y: 8.999846}
-  m_UseDelaunayMesh: 0
+  - {x: 13.996941, y: 8.99918}
+  - {x: 13.998335, y: -4.9962935}
+  - {x: -5.9967976, y: -4.995034}
+  - {x: -5.9932084, y: 8.997136}
+  - {x: 13.996534, y: 8.999058}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
