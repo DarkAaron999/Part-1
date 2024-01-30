@@ -234,6 +234,39 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!1 &163873374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163873375}
+  m_Layer: 0
+  m_Name: Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163873375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163873374}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 752126916}
+  - {fileID: 1027210237}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &179849641
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +867,7 @@ GameObject:
   - component: {fileID: 601547273}
   - component: {fileID: 601547276}
   m_Layer: 13
-  m_Name: Lazer (2)
+  m_Name: LazerHazard2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -853,7 +886,7 @@ Transform:
   m_LocalScale: {x: 0.7709383, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1322505093}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!61 &601547273
 BoxCollider2D:
@@ -1146,6 +1179,7 @@ GameObject:
   - component: {fileID: 752126915}
   - component: {fileID: 752126918}
   - component: {fileID: 752126917}
+  - component: {fileID: 752126919}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -1218,7 +1252,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 163873375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!61 &752126917
 BoxCollider2D:
@@ -1292,6 +1326,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &752126919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752126914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f5494e9ee786c479435d0a572e0233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 466958562}
+  lazerHazard: {fileID: 1322505092}
 --- !u!1 &759815006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,6 +1605,7 @@ GameObject:
   - component: {fileID: 1027210236}
   - component: {fileID: 1027210235}
   - component: {fileID: 1027210234}
+  - component: {fileID: 1027210238}
   m_Layer: 0
   m_Name: Button (1)
   m_TagString: Untagged
@@ -1696,13 +1745,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027210233}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.3127, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 163873375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1027210238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027210233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f5494e9ee786c479435d0a572e0233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 466958562}
+  lazerHazard: {fileID: 601547271}
 --- !u!1 &1088033743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,7 +1807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1322505093}
   m_Layer: 0
-  m_Name: Blocked
+  m_Name: LazerHazard1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1765,7 +1828,6 @@ Transform:
   m_Children:
   - {fileID: 490670203}
   - {fileID: 308511507}
-  - {fileID: 601547272}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1342305573
@@ -6683,8 +6745,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 2091067053}
   - {fileID: 1464626035}
-  - {fileID: 752126916}
-  - {fileID: 1027210237}
   - {fileID: 466958564}
+  - {fileID: 163873375}
   - {fileID: 471669072}
+  - {fileID: 601547272}
   - {fileID: 1322505093}
