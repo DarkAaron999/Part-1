@@ -9,8 +9,6 @@ public class MissileHazard : MonoBehaviour
     public Vector2 speed = new Vector2 (10, 0);
     // To use the rigidbody
     Rigidbody2D rigidbody;
-
-    public GameObject player;
     void Start()
     {
         // To get the component for rigidbody
@@ -35,7 +33,5 @@ public class MissileHazard : MonoBehaviour
     {
         // Destory the missile gameobject
         Destroy(gameObject);
-        // Destory the player gameobject
-        Destroy(player);
     }
 }

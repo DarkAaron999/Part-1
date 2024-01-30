@@ -8,6 +8,7 @@ TagManager:
   - Car
   - Oillspill
   - Boost
+  - Missile2
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - Finish Line
   - Cone
   - Wall
-  - 
-  - 
+  - MissileTrigger
+  - Missile2
   - 
   - 
   - 
